@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* Estilo do header */
+header {
+    padding: 016px;
+    background: #140126;
+    color: #ecf0f1;
+
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*Fontes utilizadas*/
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .bungee-regular {
+    font-family: "Bungee", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+/* Estilo do container */
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px; /* Adicionando padding horizontal para evitar que o conteúdo toque as bordas */
+
+}
+
+/* Estilo do header e seções */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section .container {
+    
+    display: flex;
+    align-items: flex-start; /* Alinhamento inicial para o conteúdo das seções */
+    justify-content: space-between;
+}
+
+
+/* Estilo da lista de marcas */
+.brands-list img {
+    height: 26px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+/* Estilo das seções */
+section {
+    padding: 24px 0;
+    color: #140126;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+#about .container {
+    display: flex; /* Torna o contêiner um flexbox */
+    align-items: flex-start; /* Alinha os itens ao topo do contêiner */
+    justify-content: space-between; /* Espalha os itens com espaço entre eles */
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #140126;
+}
+
+/* Estilo da loja */
+.store-front {
+    margin-right: 32px; /* Adiciona espaço à direita da imagem */
+    border-radius: 20px;
+    width: 500px; /* Você pode ajustar a largura conforme necessário */
+}
+
+/* Estilo do contato */
+.contact-methods {
+    display: flex; /* Ativa o layout Flexbox */
+    justify-content: space-between; /* Distribui o espaço igualmente entre os itens */
+    gap: 20px; /* Espaçamento entre os itens */
+
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.contact-info, 
+.social-media, 
+.address-info {
+    flex: 1; /* Faz cada item ocupar o mesmo espaço */
+}
+
+/* Para ajustar a largura dos itens, se necessário */
+.contact-info, 
+.social-media, 
+.address-info {
+    min-width: 250px; /* Largura mínima para os itens */
+}
+/* Estilo do formulário */
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+form button {
+    background-color: #182C61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #314e9e;
+}
+
+input:focus, 
+textarea:focus {
+    outline-color: #182C61;
+}
+
+/* Estilo dos links sociais */
+.social-links img {
+    height: 24px;
+}
+
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+.social-links li a {
+    text-decoration: none;
+}
+
+/* Estilo do footer */
+footer {
+    padding: 16px;
+    background: #182C61;
+    color: #ecf0f1;
+}
+
+/* Estilos para telas menores que 768px */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column; /* Alinha os itens em coluna */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .store-front {
+        width: 100%; /* Imagem ocupa 100% da largura */
+        margin-right: 0; /* Remove margem à direita */
+        border-radius: 0; /* Remove borda arredondada */
+    }
+
+    .contact-methods {
+        display: block; /* Exibe métodos de contato em bloco */
+    }
+
+    form input,
+    form textarea,
+    form button {
+        width: 100%; /* Os campos do formulário ocupam 100% da largura */
+        margin-bottom: 12px; /* Adiciona espaço entre os campos */
+    }
+
+    .brands-list {
+        justify-content: center; /* Centraliza as logos das marcas */
+    }
+}
